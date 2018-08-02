@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: ru.lessons.inheritance.Main
+Class-Path: ./Utils.jar
+

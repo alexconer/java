@@ -18,5 +18,6 @@ public class Main {
         System.out.println(u2.getSalary());
 
         Print.println("Hello");
+        System.out.println(System.getProperty("java.ext.dirs"));
     }
 }
