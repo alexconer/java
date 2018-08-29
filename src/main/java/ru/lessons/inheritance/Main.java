@@ -14,10 +14,15 @@ public class Main {
         u2.setSalary(1000);
         u2.setBonus(500);
 
+        User assistant = new Assistant("Vlad", u2);
+
+
         System.out.println(u1.getSalary());
         System.out.println(u2.getSalary());
 
         Print.println("Hello");
         System.out.println(System.getProperty("java.ext.dirs"));
+
+        System.out.println(assistant.name);
     }
 }

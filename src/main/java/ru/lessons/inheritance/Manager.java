@@ -20,3 +20,13 @@ public class Manager extends User {
         return super.getSalary() + bonus;
     }
 }
+
+class Assistant extends User {
+
+    private Manager manager;
+
+    public Assistant(String name, Manager m){
+        super(name);
+        manager = m;
+    }
+}
