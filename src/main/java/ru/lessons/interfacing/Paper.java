@@ -19,4 +19,12 @@ public abstract class Paper implements Printable {
     public int getSheet() {
         return sheet;
     }
+
+    @Override
+    public String toString() {
+        return "Paper{" +
+                "sheet=" + sheet +
+                ", author='" + author + '\'' +
+                '}';
+    }
 }
