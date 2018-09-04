@@ -3,7 +3,7 @@ package ru.lessons.interfacing;
 /**
  * Created by ShishkinA on 29.08.2018.
  */
-public abstract class Paper implements Printable {
+public abstract class Paper implements Packable {
     private int sheet;
     private String author;
 

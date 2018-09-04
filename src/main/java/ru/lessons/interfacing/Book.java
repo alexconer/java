@@ -14,6 +14,10 @@ public class Book extends Paper implements Comparable<Book> {
         System.out.println("sheet count (" + getSheet() + ")"  );
     }
 
+    public void pack() {
+        System.out.println("pack");
+    }
+
     public int compareTo(Book o) {
         return getSheet() > o.getSheet() ? 1 : -1;
     }

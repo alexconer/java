@@ -7,10 +7,15 @@ import java.util.Arrays;
  */
 public class Test {
     public static void main(String[] args) {
-        Printable b = new Book("Ronald", 200);
+        Packable b = new Book("Ronald", 200);
         Printable b1 = new Book("Carol", 400);
         Printable b2 = new Book("Tolstoy", 600);
         b.print();
+        b.pack();
+
+        if (b1 instanceof Packable){
+            System.out.println("b instanceof Printable");
+        }
 
         //b.publisher = "Sir";
         System.out.println(b.publisher);
