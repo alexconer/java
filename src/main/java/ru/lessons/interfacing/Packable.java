@@ -5,4 +5,8 @@ package ru.lessons.interfacing;
  */
 public interface Packable extends Printable {
     void pack();
+
+    default void print(){
+        System.out.println("default print");
+    }
 }
