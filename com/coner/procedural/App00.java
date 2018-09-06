@@ -12,5 +12,6 @@ public class App00 {
         ar.invertRecursion();
         ar.print();
 
+        MyArrays ar2 = new MyArrays(new int[]{2,5,3,1,9,6,4,8,7});
     }
 }

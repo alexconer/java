@@ -12,9 +12,7 @@ public class MyArrays {
 
     public void invert (){
         for (int i = 0; i < data.length/2; i++){
-            int tmp = data[i];
-            data[i] = data[data.length - i - 1];
-            data[data.length - i - 1] = tmp;
+            swap(i, data.length - i - 1);
         }
     }
 
@@ -24,9 +22,7 @@ public class MyArrays {
 
     private void invertRecursion(int i){
         if (i < data.length/2){
-            int tmp = data[i];
-            data[i] = data[data.length - i - 1];
-            data[data.length - i - 1] = tmp;
+            swap(i, data.length - i - 1);
             invertRecursion(i + 1);
         }
     }
@@ -34,4 +30,12 @@ public class MyArrays {
     public void print(){
         System.out.println(Arrays.toString(data));
     }
+
+    private void swap(int first, int second){
+            int tmp = data[first];
+            data[first] = data[second];
+            data[second] = tmp;
+    }
+
+    //public void sort
 }
