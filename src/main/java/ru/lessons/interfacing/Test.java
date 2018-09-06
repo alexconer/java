@@ -41,5 +41,8 @@ public class Test {
         pp2[5] = 5;
         System.out.println(Arrays.toString(pp1));
         System.out.println(Arrays.toString(pp2));
+        System.out.println("----->");
+
+        System.out.println(Constants.YES);
     }
 }
