@@ -7,8 +7,11 @@ public class Manager extends User {
 
     private double bonus;
 
-    public Manager(String name) {
-        super(name);
+    public String name; // = "Elana";
+
+    public Manager(String _name) {
+        super(_name);
+        name = "_" + _name;
     }
 
     public void setBonus(double bonus) {
@@ -19,6 +22,7 @@ public class Manager extends User {
     public double getSalary() {
         return super.getSalary() + bonus;
     }
+
 }
 
 class Assistant extends User {
