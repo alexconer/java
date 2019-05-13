@@ -17,6 +17,19 @@ public class MyArrays {
         return data;
     }
 
+    public void insert(int val){
+        // inserting
+    }
+
+    public boolean delete(int val){
+        //deleteing
+        return true;
+    }
+
+    public boolean find(int val){
+        return true;
+    }
+
     public void invert (){
         for (int i = 0; i < data.length/2; i++){
             swap(i, data.length - i - 1);
@@ -117,5 +130,19 @@ public class MyArrays {
                 return mid;
         }
         return -(low + 1);
+    }
+
+    public int[] merge(int[] a, int[] b){
+        int[] res = new int[a.length + b.length];
+        int ai = 0, bi =0;
+
+        while (ai + bi < res.length){
+            if (a[ai] < b[bi]){
+                res[ai + bi] = a[ai++];
+            } else {
+                res[ai + bi] = b[bi++];
+            }
+        }
+        return res;
     }
 }

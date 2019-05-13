@@ -5,5 +5,6 @@ public class Test {
     //u.print();
     public static void main(String[] args) {
         Paper p = new Magazin();
+        Object o;
     }
 }
